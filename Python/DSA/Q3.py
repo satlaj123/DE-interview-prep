@@ -9,10 +9,11 @@ Sample Output:
 
 """
 
-def findSum(input_lst,n):
+
+def findSum(input_lst, n):
     if n == 1:
         return input_lst[0]
-    
+
     if input_lst[0] > input_lst[1]:
         maxi = input_lst[0]
         mini = input_lst[1]
@@ -28,6 +29,7 @@ def findSum(input_lst,n):
             mini = input_lst[i]
 
     return maxi + mini
+
 
 input_lst = [1, 3, 4, 1]
 n = len(input_lst)
